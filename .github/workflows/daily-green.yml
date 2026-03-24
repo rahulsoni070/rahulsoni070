@@ -1,0 +1,33 @@
+name: Daily Green Commit
+
+on:
+  schedule:
+    - cron: "15 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update daily section
+        run: |
+          NOW="$(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+          awk -v now="$NOW" '
+            /<!-- START_SECTION:daily -->/ {print; print "Last auto-update: " now; skip=1; next}
+            /<!-- END_SECTION:daily -->/ {skip=0}
+            !skip {print}
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "rahulsoni070"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: daily profile update" || exit 0
+          git push
