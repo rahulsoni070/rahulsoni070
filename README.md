@@ -1,16 +1,33 @@
-## Hi there 👋
+# Hi there 👋, I'm Rahul Soni
 
-<!--
-**rahulsoni070/rahulsoni070** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🌱 I’m building consistently every day.  
+🚀 Focus: JavaScript, Full Stack, and clean projects.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📅 Daily Progress
+<!-- START_SECTION:daily -->
+Last auto-update: not set yet
+<!-- END_SECTION:daily -->
+
+---
+
+## 🛠️ Tech Stack
+- JavaScript
+- Node.js
+- React
+- Git & GitHub
+
+---
+
+## 📌 Goals for 2026
+- [ ] Contribute every day
+- [ ] Build and ship more projects
+- [ ] Improve DSA + system design
+
+---
+
+## 🔗 Connect
+- GitHub: [rahulsoni070](https://github.com/rahulsoni070)
+
+> “Small progress daily is still progress.”
